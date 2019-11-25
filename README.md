@@ -58,6 +58,6 @@ Add a new line to your user's crontab, fill out the path to where your code is
 
 ## License
 
-[Modified BSD License](LICENSE)
+[Modified BSD License](LICENSE.md)
 
 ### thanks
