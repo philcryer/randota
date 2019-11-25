@@ -4,7 +4,7 @@ randota = randomize twitter avatar = randomize your Twitter avatar from the comm
 
 ## Idea
 
-I wanted a way to randomly change my Twitter avatar, as a bonus I wanted to have many variations on my original avatar, but have them all 'glitched'. My method requires that you manually glitch the images you want, drop them in a directory, create a new Twitter App to get permissions to change your avatar, the install and use [Tweepy](https://www.tweepy.org/) to do the heavy lifting.
+I wanted a way to randomly change my Twitter avatar, to a randomly 'glitched' out version, on a set time (currently hourly). This method requires that you manually glitch the images you want, drop them in a directory, create a new Twitter App to get permissions to change your avatar, the install and use [Tweepy](https://www.tweepy.org/) to do the heavy lifting, all called by cron.
 
 ## Steps
 
@@ -47,6 +47,14 @@ python3 randota.py
 ```
 
 View the hilarity on Twitter.com/<your_username>
+
+### Automate it
+
+Add a new line to your user's crontab, fill out the path to where your code is
+
+```
+0 * * * *    python3 ${HOME}/code/randota/randota.py >/dev/null 2>&1
+```
 
 ## License
 
