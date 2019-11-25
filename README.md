@@ -4,29 +4,30 @@ randota = randomize twitter avatar = randomize your Twitter avatar from the comm
 
 ## Idea
 
-I wanted a way to randomly change my Twitter avatar, as a bonus I wanted to have many variations on my original avatar, but have them all 'glitched'
+I wanted a way to randomly change my Twitter avatar, as a bonus I wanted to have many variations on my original avatar, but have them all 'glitched'. My method requires that you manually glitch the images you want, drop them in a directory, create a new Twitter App to get permissions to change your avatar, the install and use [Tweepy](https://www.tweepy.org/) to do the heavy lifting.
 
 ## Steps
 
+### Get the code
+
+Clone the git repo and start to configure your environment
+
+```
+git clone https://github.com/philcryer/randota.git
+cd randota
+rm -rf img/*
+cp config.json.dist config.json
+```
+
 ### Create a Twitter app
 
-twitter api via curl
-tips https://gist.github.com/apolloclark/2d4f6362f31666c1c81f
+The first step you should take is to create a new Twitter App so you can get permissions to update your user's avatar. While there are many howtos out there, this one is complete and should get you going; [How to create a Twitter application](https://docs.inboundnow.com/guide/create-twitter-application/)
 
-https://developer.twitter.com/en/docs/basics/authentication/overview/application-only
-
-https://developer.twitter.com/en/apps/17031299`
-
-keey and token create
-
-https://developer.twitter.com/en/docs/accounts-and-users/manage-account-settings/api-reference/post-account-update_profile_image
-The avatar image for the profile, base64-encoded. Must be a valid GIF, JPG, or PNG image of less than 700 kilobytes in size. Images with width larger than 400 pixels will be scaled down. Animated GIFs will be converted to a static GIF of the first frame, removing the animation.
-
-POST https://api.twitter.com/1.1/account/update_profile_image.json?image=ABCDEFGH...
+Once you get to `8. Make a note of your OAuth Settings`, be sure and save the Consumer Key, Consumer secret, Access token and Access token secret, defining each of the values in your newly created config.json file
 
 ### Glitch your avatar
 
-If you want to do the same with the glithed idea, play on here, otherwise jump to the next section
+To glitch your avatar, play on here, otherwise if you just want to use standard avatars and rotate between them, jump to the next section
 
 1) save your avatar locally
 2) hit [jpg-glitch](https://snorpey.github.io/jpg-glitch/), upload your avatar, glitch it as much as you want, or just choose the 'random' option
@@ -38,14 +39,6 @@ If you want to do the same with the glithed idea, play on here, otherwise jump t
 ```
 pip install -r requirements.txt
 ```
-
-### Build your config file
-
-```
-cp config.json.dist config.json
-```
-
-Edit `config.json` and add your values from your Twitter app page
 
 ### Run it
 
