@@ -37,13 +37,13 @@ To glitch your avatar, play on here, otherwise if you just want to use standard 
 ### Install requirements
 
 ```
-pip install -r requirements.txt
+sudo python -m pip install -r requirements.txt
 ```
 
 ### Run it
 
 ```
-python3 randota.py
+python randota.py
 ```
 
 View the hilarity on Twitter.com/<your_username>
@@ -53,7 +53,7 @@ View the hilarity on Twitter.com/<your_username>
 Add a new line to your user's crontab, fill out the path to where your code is
 
 ```
-0 * * * *    python3 ${HOME}/code/randota/randota.py >/dev/null 2>&1
+0 * * * *    python ${HOME}/code/randota/randota.py >/dev/null 2>&1
 ```
 
 ## License
