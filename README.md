@@ -4,7 +4,7 @@ randota = randomize twitter avatar = randomize your Twitter avatar from the comm
 
 ## Idea
 
-I wanted a way to randomly change my Twitter avatar, to a randomly 'glitched' out version, on a set time (currently hourly). This method requires that you manually glitch the images you want, drop them in a directory, create a new Twitter App to get permissions to change your avatar, the install and use [Tweepy](https://www.tweepy.org/) to do the heavy lifting, all called by cron.
+I wanted a way to randomly change my Twitter avatar, to a randomly 'glitched' out version, on a set time (currently hourly). This method requires that you manually glitch the images you want, drop them in a directory, create a new Twitter App to get permissions to change your avatar, then install and use [Tweepy](https://www.tweepy.org/) to do the heavy lifting, all called by `cron`.
 
 ## Steps
 
