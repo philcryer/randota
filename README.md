@@ -37,6 +37,7 @@ To glitch your avatar, play on here, otherwise if you just want to use standard 
 ### Install requirements
 
 ```
+sudo apt install python3-pip
 sudo python -m pip install -r requirements.txt
 ```
 
