@@ -36,9 +36,11 @@ To glitch your avatar, play on here, otherwise if you just want to use standard 
 
 ### Install requirements
 
+For Debian GNU/Linux, or any Ubuntu derivatives.
+
 ```
 sudo apt install python3-pip
-sudo python -m pip install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 ### Run it
