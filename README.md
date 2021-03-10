@@ -1,10 +1,14 @@
 # randota
 
-randota = randomize twitter avatar = randomize your Twitter avatar from the commandline
+randota = randomize twitter avatar = randomize your Twitter avatar from the commandline, and automate it using cron
 
-## Idea
+## Idea1
 
-I wanted a way to randomly change my Twitter avatar, to a randomly 'glitched' out version, on a set time (currently hourly). This method requires that you manually glitch the images you want, drop them in a directory, create a new Twitter App to get permissions to change your avatar, then install and use [Tweepy](https://www.tweepy.org/) to do the heavy lifting, all called by `cron`.
+I wanted a way to randomly change my Twitter avatar, to a randomly 'glitched' out version, on a set time (currently hourly), so I created `glitchedavatar.py`. This method requires that you manually glitch the images you want, drop them in a directory, create a new Twitter App to get permissions to change your avatar, then install and use [Tweepy](https://www.tweepy.org/) to do the heavy lifting, all called by `cron`.
+
+## Idea2
+
+I wanted a way to update an avatar with a random one, but I took it a step further buy having it update it with a random one, of a person that doesn't exist. The new script `getthisperson.py` follows much of the same logic of `glitchedavatar.py`, but this time it pulls a user from [This Person Doesn't Exist](https://thispersondoesntexist.com). This is a machine learning project that generates fake people, that look real. See the site for more information, it's really facinating. To use this script, follow the same stesp below, skipping "Glitch you avatar". 
 
 ## Steps
 
@@ -45,8 +49,16 @@ python3 -m pip install -r requirements.txt
 
 ### Run it
 
+To run `glitchedavatar.py`:
+
 ```
-python randota.py
+python3 glitchedavatar.py
+```
+
+or, to run `getthisperson.py`:
+
+```
+python3 getthisperson.py
 ```
 
 View the hilarity on Twitter.com/<your_username>
@@ -55,8 +67,16 @@ View the hilarity on Twitter.com/<your_username>
 
 Add a new line to your user's crontab, fill out the path to where your code is
 
+To automate `glitchedavatar.py`:
+
 ```
-0 * * * *    python ${HOME}/code/randota/randota.py >/dev/null 2>&1
+0 * * * *    cd ${HOME}/code/randota; python3 glitchedavatar.py >/dev/null 2>&1
+```
+
+or, to automate `getthisperson.py`:
+
+```
+0 * * * *    cd ${HOME}/code/randota; python3 getthisperson..py >/dev/null 2>&1
 ```
 
 ## License

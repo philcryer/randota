@@ -9,3 +9,4 @@ tweepy==3.8.0
 urllib3==1.25.7
 certifi==2019.9.11
 pathlib
+urlopen
