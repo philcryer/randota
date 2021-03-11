@@ -84,7 +84,7 @@ To automate `glitchedavatar.py`:
 or, to automate `getthisperson.py`:
 
 ```
-0 * * * *    cd ${HOME}/code/randota; python3 getthisperson..py >/dev/null 2>&1
+0 * * * *    cd ${HOME}/code/randota; python3 getthisperson.py >/dev/null 2>&1
 ```
 
 ## License
