@@ -6,7 +6,7 @@ randota = randomize twitter avatar = randomize your Twitter avatar from the comm
 
 I wanted a way to randomly change my Twitter avatar, to a randomly 'glitched' out version, on a set time (currently hourly), so I created `glitchedavatar.py`. This method requires that you manually glitch the images you want, drop them in a directory, create a new Twitter App to get permissions to change your avatar, then install and use [Tweepy](https://www.tweepy.org/) to do the heavy lifting, all called by `cron`.
 
-## Idea2 - thispersondoesntexist avatar
+## Idea2 - thispersondoesnotexist avatar
 
 I wanted a way to update an avatar with a random one, but I took it a step further buy having it update it with a random one, of a person that doesn't exist. The new script `getthisperson.py` follows much of the same logic of `glitchedavatar.py`, but this time it pulls a user from [This Person Does not Exist](https://www.thispersondoesnotexist.com/). This is a project that uses machine Learning with neural and evolutionary computing to generate images of real looking people, that actually do not exist. See the site, or [arXiv:1912.04958v2](https://arxiv.org/abs/1912.04958) [cs.CV] for more information, it's really facinating. To use this script, follow the same steps below, skipping the "Glitch you avatar" section.
 
