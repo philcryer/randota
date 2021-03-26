@@ -8,7 +8,7 @@ I wanted a way to randomly change my Twitter avatar, to a randomly 'glitched' ou
 
 ## Idea2 - thispersondoesnotexist avatar
 
-I wanted a way to update an avatar with a random one, but I took it a step further buy having it update it with a random one, of a person that doesn't exist. The new script `getthisperson.py` follows much of the same logic of `glitchedavatar.py`, but this time it pulls a user from [This Person Does not Exist](https://www.thispersondoesnotexist.com/). This is a project that uses machine Learning with neural and evolutionary computing to generate images of real looking people, that actually do not exist. See the site, or [arXiv:1912.04958v2](https://arxiv.org/abs/1912.04958) [cs.CV] for more information, it's really facinating. To use this script, follow the same steps below, skipping the "Glitch you avatar" section.
+I wanted a way to update an avatar with a random one, but I took it a step further by having it update it with a random image of a person that doesn't exist. The new script `getthisperson.py` follows much of the same logic of `glitchedavatar.py`, but this time it pulls a user from [This Person Does not Exist](https://www.thispersondoesnotexist.com/). This is a project that uses machine Learning with neural and evolutionary computing to generate images of real looking people, that actually do not exist. See the site, or [arXiv:1912.04958v2](https://arxiv.org/abs/1912.04958) [cs.CV] for more information, it's really facinating. To use this script, follow the same steps below, skipping the "Glitch you avatar" section.
 
 ## Steps
 
