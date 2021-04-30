@@ -8,7 +8,11 @@ I wanted a way to randomly change my Twitter avatar, to a randomly 'glitched' ou
 
 ## Idea2 - thispersondoesnotexist avatar
 
-I wanted a way to update an avatar with a random one, but I took it a step further by having it update it with an image of a person that doesn't exist. The new script `getthisperson.py` follows much of the same logic of `glitchedavatar.py`, but this time it pulls a user from [This Person Does not Exist](https://www.thispersondoesnotexist.com/). This is a project that uses machine Learning with neural and evolutionary computing to generate images of real looking people, that actually do not exist. See the site, or [arXiv:1912.04958v2](https://arxiv.org/abs/1912.04958) [cs.CV] for more information, it's really facinating. To use this script, follow the same steps below, skipping the "Glitch you avatar" section.
+I wanted a way to update an avatar with a random one, but I took it a step further by having it update it with an image of a person that doesn't exist. The new script `getthisperson.py` follows much of the same logic of `glitchedavatar.py`, but this time it pulls a user from [This Person Does not Exist](https://www.thispersondoesnotexist.com/). This is a project that uses machine Learning with neural and evolutionary computing to generate images of real looking people, that actually do not exist. See the site, or [arXiv:1912.04958v2](https://arxiv.org/abs/1912.04958) [cs.CV] for more information, it's really facinating. To use this script, follow the same steps below, skipping the "Glitch your avatar" section.
+
+## Idea3 - moonphase icon in profile description
+
+This commited code changes the user's description to an icon representing the current moon phase. I'd like to expand on this to update the username to the name of the phase of the mooon. As with the last script, to use this, skip the "Glitch your avatar" section - and remind me to redo this README.md to account for all the different scripts soon!
 
 ## Steps
 

@@ -30,6 +30,10 @@ with urlopen(req) as response:
 
 newfilename ='avatar.jpg'
 
+newdesc ='this person does not exist'
+
 # change avatar to randomly chosen file in twitter
 api = tweepy.API(auth)
 api.update_profile_image(newfilename)
+
+api.update_profile(newdesc)
