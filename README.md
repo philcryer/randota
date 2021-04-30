@@ -23,7 +23,7 @@ Clone the git repo and start to configure your environment
 ```
 git clone https://github.com/philcryer/randota.git
 cd randota
-rm -rf img/*
+rm -rf images/glitched/*
 cp config.json.dist config.json
 ```
 
@@ -55,7 +55,7 @@ To glitch your avatar, play on here, otherwise if you just want to use standard 
 
 1) save your avatar locally
 2) hit [jpg-glitch](https://snorpey.github.io/jpg-glitch/), upload your avatar, glitch it as much as you want, or just choose the 'random' option
-3) save the file into a directory `img`
+3) save the file into a directory `images/glitched`
 4) repeat as many times as you'd like to increase your randomness
 
 

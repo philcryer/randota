@@ -45,10 +45,10 @@ moon = math.floor(day / 4)
 icon = moons[moon]
 
 # get random filename from path and build the full path to the file
-path ='img/'
-files = os.listdir(path)
-index = random.randrange(0, len(files))
-newfilename = inputfile or os.path.join(path, ''.join((files[index])))
+#path ='img/'
+#files = os.listdir(path)
+#index = random.randrange(0, len(files))
+#newfilename = inputfile or os.path.join(path, ''.join((files[index])))
 
 # change avatar to randomly chosen file in twitter and set name to current moon phase
 api = tweepy.API(auth)

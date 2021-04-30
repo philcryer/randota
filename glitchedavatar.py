@@ -19,7 +19,7 @@ auth.set_access_token(
 )
 
 # get random filename from path and build the full path to the file
-path ='img/'
+path ='images/glitched'
 files = os.listdir(path)
 index = random.randrange(0, len(files))
 newfilename = os.path.join(path, ''.join((files[index])))
